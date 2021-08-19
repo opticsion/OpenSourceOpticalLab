@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>855</x>
+      <y>18</y>
+      <w>324</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>main
+--
+Pixel* maximum(frameG:Mat, bruit:int)
+Pixel* minimum(frameG:Mat)
+int power(frame:Mat)
+void momen(frame:Mat, pointer:float*)
+
+Mat profileX(frame:Mat*, pixel:Pixel*, mean:float*, 
+standard_deviation:float*, dataProfil:float*, widthProfileX:float*
+limitWidth:double*, filterPrecision:int*)
+
+Mat ProfileY(frame:Mat*, pixel:Pixel*, mean:float*, 
+standard_deviation:float*, dataProfil:float*, widthProfileY:float*
+limitWidth:double*, filterPrecision:int*)
+
+int add_cmp(theX:int, theY:int, theWidth:int,
+theHeight:int, filterPrecision:int)
+double add_switch(theX:int, theY:int, theWidth:int,
+theHeight:int, limit:double)
+void gradient_relative(value:int, rgb:int*, max:int)
+void gradient absolute(value:int, rgb:int*)
+
+--
+frameG:Mat
+principalFrame:Mat</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>135</x>
+      <y>324</y>
+      <w>225</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>
+Pixel::Class
+
+--
+-x
+-y
+-intensity
+--
++getX()
++getY()
++getIntensity()
++setX(int x) : void
++void setY(int y) : void
++void setIntensity(int intensity) : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>135</x>
+      <y>72</y>
+      <w>189</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>
+Time::Class
+
+--
+-years
+-months
+-days
+-hours
+-minutes
+-seconds
+--
++Time()
++string getTime()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>369</x>
+      <y>720</y>
+      <w>351</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>
+Display::Class
+
+--
+-Mat* displayFrame
+--
++Display(Mat* frame) : void
++addText(posX, posY, text) : void
++addText_size(posX, posY, size, text) : void
++displayResult() : void
++add_comp(theX, theY, theWidth, theHeight, limit) : int
++add_switch(theX, theY, theWidth, theHeight, limit) : double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>423</x>
+      <y>189</y>
+      <w>261</w>
+      <h>459</h>
+    </coordinates>
+    <panel_attributes>
+Camera::Class
+
+--
+- pixelSize : double
+- model : string
+- luminosity : int
+- contrast : int
+- gain : int
+- expoTime : int
+- myCapture : RaspiCam_Cv
+--
++ Camrea(camera : Raspicam_Cv*)
++ set parameters() : void
+setLuminosity(int lum) : void
+setSaturation(int sat) : void
+setContrast(int cont) : void
+setGain(int gain) : void
+setExpoTime(int expT) : void
+getPixelSize() : double
+getLuminosity() : int
+getSaturation() : int
+getContrast() : int
+getGain() : int
+getExpoTime() : int
+getStrModel() : string
+getStrLuminosity() : string
+getStrSaturation() : string
+getStrContrast() : string
+getStrGain() : string
+getStrExpoTime() : string
+grabImage() : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>855</x>
+      <y>414</y>
+      <w>324</w>
+      <h>459</h>
+    </coordinates>
+    <panel_attributes>main
+--
+frame:Mat
+framec:Mat
+
+frameT:Mat
+frameTc:Mat
+
+min: Pixel*
+max: Pixel*
+pow:int
+cap:raspicam::RaspiCam_Cv
+meanY:float*
+standard_deviationY:float*
+meanX:float*
+standard_deviationX:float*
+widthProfileX:float*
+widthProfileY:float*
+diam:float*
+rgb:int*
+height:int
+width:int
+filterPrecision:int
+measureNbr:int
+dataProfileX:float*
+dataProfileX:float*
+
+--
+frameG:Mat
+principalFrame:Mat</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>423</x>
+      <y>45</y>
+      <w>261</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>
+GradientFrame::Class
+
+--
++gradient_relative(value, rgb, max) : void
++gradient_absolute(value, rgb) : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

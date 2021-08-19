@@ -1,0 +1,9 @@
+Ecrire à la suite les informations du menu about. ne pas depasser 90 caractères par lignes et  21 lignes :
+
+Das Bild wird auf der Startseite angezeigt und gibt einen Uberblick uber die
+Messung. Die Kamera muss so ausgerichtet sein, dass auf dem Bildschirm zwei
+deutliche Bildpunkte zu sehen sind.
+
+Wenn Sie die Taste Pause/Play drucken, wird die Messung gestartet. Die Pixel mit 
+der hochsten Lichtintensitat werden erkannt und jeder Strahl wird lokalisiert.
+Anschliessend wird der Abstand zwischen den Strahlen berechnet.

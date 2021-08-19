@@ -1,0 +1,12 @@
+Write after this first line. Don't write up to 90 chars per rows and 21 rows :
+
+
+
+Focal distance :
+The image is displayed in the startpage and offers an overview of the measurement. The
+camera must then be aligned so that 2 distinct image points (focus) are visible on the
+screen.
+
+Pressing the Pause/Play button then starts the measurment. The pixels with the highest
+light intensity are detected and each beam is located. The distance between the beams
+is then calculated.

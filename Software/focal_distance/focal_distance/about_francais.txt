@@ -1,0 +1,10 @@
+Ecrire à la suite les informations du menu about. ne pas depasser 90 caractères par lignes et  21 lignes :
+
+Distance focale :
+L'image affichee dans la page de demarrage offre un apercu de la mesure.
+Il faut alors aligner la camera pour que 2 foyers images bien distincts
+soient visibles à l'ecran.
+
+Ensuite l'appui sur le bouton Pause/Play lance la mesure. Les pixels
+ayant le plus d'intensite sont detetctes, et chaque faisceau est localise.
+La distance entre les faisceaux est ensuite calculee.
