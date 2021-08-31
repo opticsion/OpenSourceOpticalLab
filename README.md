@@ -1,4 +1,4 @@
-"# OpenSourceOpticalLab" 
+"#OpenSourceOpticalLab" 
 
 This repo includes two measurement tools for an optical laboratory: (1) measurement of the focal length of a lens
 and (2) measurement of the diameter of a laser beam.
