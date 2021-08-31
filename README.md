@@ -8,4 +8,4 @@ connected to a CMOS camera.
 The software is written in C++ and the cameras are connected via an HDMI cable
 
 ![Resume](resume.jpg)
-Format: ![Alt Text](url)
+
